@@ -1,9 +1,10 @@
 # Automatic Image Enhancement
 -----------
 ### Description
-For detailed information, see [this link](https://support.google.com/merchants/answer/9242973)
-Basically, google shopping ads doesn't approve product image that contains call to actions text, promotional overlay and other distracting patches.
-The goal of this project is to create a machine learning model that automatically crop out relevant part of the product region.
+For detailed information, see [this link](https://support.google.com/merchants/answer/9242973).
+
+Basically, google shopping ads doesn't approve product images that contain `call to actions text`, `promotional overlay` and other distracting patches.
+The goal of this project is to create a machine learning model that automatically crop out relevant region of the product within an image.
 
 ### Installation
 ```bash
@@ -19,7 +20,7 @@ The notebook also provide way to load a pretrained model and use it for inferenc
 ### Method:
 - We make use of self-supervised learning to artificially generate bounding box and segmentations for product regions, and overlay that region to a designed background.
 - Then we use [detectron2](https://github.com/facebookresearch/detectron2) to train a Masked-RCNN model for Object-Detection and Instance-Segmentation.
-- For a more general approach, see [this_link](https://blog.picaas.io/2019/08/02/image-ai-leverage-image-insights-via-ml-picaas-for-google-shopping-ads/)
+- For a more general approach, see [this link](https://blog.picaas.io/2019/08/02/image-ai-leverage-image-insights-via-ml-picaas-for-google-shopping-ads/)
 
 ### Pretrained models
-The pretrained model was trained on nearly 11500 data samples over various products and background for 2400 iterations. Visit [this_link](https://drive.google.com/file/d/1jylcsSSd1NVq5MaEFHQF4GAgAU-zSqBk/view?usp=sharing) to download the model.
+The pretrained model was trained on nearly 11500 data samples over various products and background for 2400 iterations. Visit [this link](https://drive.google.com/file/d/1jylcsSSd1NVq5MaEFHQF4GAgAU-zSqBk/view?usp=sharing) to download the model.
