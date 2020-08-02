@@ -1,0 +1,7 @@
+imantics
+matplotlib
+opencv-python
+numpy
+Pillow
+tqdm
+pytest
