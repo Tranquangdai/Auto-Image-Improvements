@@ -6,7 +6,7 @@ import numpy as np
 from imantics import Mask
 from PIL import Image
 
-from aii.utils import grab_contours, list_images, move_polygons
+from ..utils import grab_contours, list_images, move_polygons
 
 
 class Segment:

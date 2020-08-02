@@ -3,7 +3,7 @@ import random
 import numpy as np
 from PIL import Image
 
-from aii.utils import array_to_PIL, list_images
+from ..utils import array_to_PIL, list_images
 
 
 class BackGround():
